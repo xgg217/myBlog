@@ -42,6 +42,12 @@ app.get('/getAllBlog', loader.get('/getAllBlog'));
 // 随机云标签
 app.get('/getTagAll', loader.get('/getTagAll'));
 
+// 最近热门文章--从高到低排序
+app.get('/getBlogHot', loader.get('/getBlogHot'));
+
+// 最新评论
+app.get('/getnewPl', loader.get('/getnewPl'));
+
 app.listen(globalConfig.port, () => {
   console.log('服务器启动');
 });

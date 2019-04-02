@@ -35,6 +35,12 @@ const pushViews = (data, id, suc) => {
 const getAllBlog = (suc) => {
   console.log('获取所有的博客文章 s层')
   studentDao.getAllBlog(suc);
+};
+
+// 最近热门文章
+const getBlogHot = (suc) => {
+  console.log('获取最近热门文章 s层')
+  studentDao.getBlogHot(suc);
 }
 
 module.exports = {
@@ -43,5 +49,6 @@ module.exports = {
   "getBlogCount": getBlogCount,
   "getBlog": getBlog,
   "pushViews": pushViews,
-  "getAllBlog": getAllBlog
+  "getAllBlog": getAllBlog,
+  "getBlogHot": getBlogHot
 };

@@ -54,8 +54,30 @@ const getComments = (id, suc) => {
 // 获取关于页面下的评论
 const getCommentsByGy = (id, suc) => {
   const querySql = "select * from comments where blog_id = ? order by id desc;";
-  // const arr = [obj.id, obj.parent, obj.userName, obj.comments, obj.email, obj.utime, obj.ctime];
   const arr = [id];
+  // console.log(arr)
+    console.log('dao')
+    console.log(arr)
+  const connection = dbutil.createConnection();
+  connection.connect();
+
+    // 查询
+  connection.query(querySql, arr, (err, res) => {
+    // console.log(err);
+    if(!err) {
+      suc(res);
+    } else {
+      throw new Error('查询异常' + err);
+    }
+  });
+  // 关闭数据库
+  connection.end();
+}
+
+// 获取最新评论--倒序
+const getnewPl = (suc) => {
+  const querySql = "select * from comments order by id desc limit 10;";
+  const arr = [];
   // console.log(arr)
     console.log('dao')
     console.log(arr)
@@ -78,5 +100,6 @@ const getCommentsByGy = (id, suc) => {
 module.exports = {
   "pushComments": pushComments,
   "getComments": getComments,
-  "getCommentsByGy": getCommentsByGy
+  "getCommentsByGy": getCommentsByGy,
+  "getnewPl": getnewPl
 };

@@ -66,4 +66,19 @@ const getCaptcha = (req, res) => {
 };
 path.set('/getCaptcha', getCaptcha);
 
+/**
+ * 最新评论
+ */
+const getnewPl = (req, res) => {
+  console.log('最新评论 web层')
+  serviceComment.getnewPl((data) => {
+    // console.log('关于页面下的评论 回调 web层')
+    // console.log(data)
+    res.writeHead(200, {"Content-Type": "text/html; charset=utf-8"});
+    res.write(returnString.serviceReturn('success', 'ok', data));
+    res.end();
+  });
+};
+path.set('/getnewPl', getnewPl);
+
 module.exports.path = path;

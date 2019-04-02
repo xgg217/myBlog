@@ -131,11 +131,34 @@ const getAllBlog = (suc) => {
   connection.end();
 };
 
+// 最近热门文章--倒叙
+const getBlogHot = (suc) => {
+  // select * from student order by age desc ;
+  const querySql = "select * from blog order by views desc limit 10;";
+  const arr = [];
+  console.log('获取最近热门文章 dao层')
+  const connection = dbutil.createConnection();
+  connection.connect();
+
+    // 查询
+  connection.query(querySql, arr, (err, res) => {
+    // console.log(err);
+    if(!err) {
+      suc(res);
+    } else {
+      throw new Error('查询异常' + err);
+    }
+  });
+  // 关闭数据库
+  connection.end();
+};
+
 module.exports = {
   "pushBlogContent": pushBlogContent,
   "getBlogContent": getBlogContent,
   "getBlogCount": getBlogCount,
   "getBlog": getBlog,
   "pushViews": pushViews,
-  "getAllBlog": getAllBlog
+  "getAllBlog": getAllBlog,
+  "getBlogHot": getBlogHot
 };

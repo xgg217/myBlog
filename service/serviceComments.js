@@ -18,8 +18,14 @@ const getCommentsByGy = (id, suc) => {
   commentDao.getCommentsByGy(id, suc);
 };
 
+// 最新评论
+const getnewPl = (suc) => {
+  commentDao.getnewPl(suc);
+};
+
 module.exports = {
   "pushComments": pushComments,
   "getComments": getComments,
-  "getCommentsByGy": getCommentsByGy
+  "getCommentsByGy": getCommentsByGy,
+  "getnewPl": getnewPl
 };

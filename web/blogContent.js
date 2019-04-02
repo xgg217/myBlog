@@ -165,4 +165,18 @@ const getAllBlog = (req, res) => {
 };
 path.set('/getAllBlog', getAllBlog);
 
+/**
+ * 最近热门。根据点击量对文章进行排序
+ */
+const getBlogHot = (req, res) => {
+  console.log('获取最近热门文章 web层')
+  studentService.getBlogHot((data) => {
+    res.writeHead(200, {"Content-Type": "text/html; charset=utf-8"});
+    res.write(returnString.serviceReturn('success', '获取所有标签', data));
+    res.end();
+  });
+};
+path.set('/getBlogHot', getBlogHot);
+
+
 module.exports.path = path;

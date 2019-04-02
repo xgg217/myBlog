@@ -10,6 +10,12 @@ const init = function() {
 
   // 随机云标签
   initYbq();
+
+  // 最近热门文章
+  HotBlog();
+
+  // 最新评论
+  newPl();
 };
 
 /**
