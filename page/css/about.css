@@ -1,0 +1,82 @@
+.content{
+  border: 1px solid #000;
+}
+.my{
+  /* border: 1px solid red; */
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.746);
+}
+.my h4{
+  font-size: 20px;
+  font-weight: 700;
+  border-bottom: 1px solid #b9b9b9;
+  padding: 10px 0;
+  color: rgb(242, 110, 250)
+}
+.my .my_content{
+  padding: 10px 0;
+}
+.my .my_content p{
+  margin-bottom: 5px;
+}
+.my .my_content p strong{
+  color: #000;
+  font-weight: bold;
+}
+.my .my_content p:last-child{
+  margin-bottom: 0;
+}
+.my_blog{
+  margin-top: 20px;
+}
+
+
+/* 留言 */
+.ly{
+
+    border: 1px solid rgb(97, 97, 97);
+    margin: 30px 0;
+    box-shadow: 8px 8px 10px rgb(97, 97, 97);
+    border-radius: 4px;
+}
+.ly h6{
+  font-size: 16px;
+  padding: 12px 0;
+}
+.ly .ly_list{
+  border: 1px dashed #7ca4c1;
+  padding: 10px;
+  background-color: #d9edf7;
+  color: #31708f;
+  margin-bottom: 10px;
+}
+.ly .list_box a{
+  color: #31708f;
+}
+.ly .list_box a:hover{
+  color: red;
+}
+.ly .ly_list p:nth-child(1){
+  /* height: 40px; */
+  display: flex;
+  align-items: center;
+}
+.ly .ly_list p i{
+  width: 40px;
+  height: 40px;
+  /* border: 1px solid red; */
+  border-radius: 50%;
+  background-image: url(./../images/lf.jpg);
+  background-size: 100%;
+  margin-right: 5px;
+}
+.ly .ly_list p strong{
+  font-weight: bold;
+}
+.ly .ly_list p:last-child{
+  padding: 5px 0;
+  line-height: 16px;
+  margin-top: 5px;
+  /* border: 1px solid #000; */
+}

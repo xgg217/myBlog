@@ -1,0 +1,89 @@
+.blog{
+  /* border: 1px solid yellow; */
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 1px 1px 5px rgba(97,97,97,.48);
+  /* border: 1px solid rgb(97, 97, 97); */
+  border-top: 1px solid rgb(97, 97, 97);
+}
+.blog .blog_title{
+  border-bottom: 1px solid #b9b9b9;
+  padding-bottom: 20px;
+}
+.blog .blog_title h2{
+  margin: 10px 0;
+}
+.blog .blog_title h2 a{
+  font-family: inherit;
+    font-weight: bold;
+    line-height: 1.1;
+    font-size: 20px;
+    color: #000;
+}
+.blog .blog_title h2 a:hover{
+  color: #23527c;
+}
+
+.blog .blog_title p a{
+  color: #337ab7;
+  font-size: 13px;
+}
+.blog .blog_title p a:hover{
+  color: #23527c;
+}
+
+/* 文章内容 */
+.blog .blog_zw{
+  margin-top: 20px;
+  line-height: 18px;
+  font-size: 15px;
+}
+
+/* 留言 */
+.ly{
+  border-top: 1px solid rgb(97, 97, 97);
+  /* border: 1px solid rgb(97, 97, 97); */
+  margin: 30px 0;
+  box-shadow: 1px 1px 5px rgba(97,97,97,.48);
+  border-radius: 4px;
+}
+.ly h6{
+  font-size: 16px;
+  padding: 12px 0;
+}
+.ly .ly_list{
+  border: 1px dashed #7ca4c1;
+  padding: 10px;
+  background-color: #d9edf7;
+  color: #31708f;
+  margin-bottom: 10px;
+}
+.ly .list_box a{
+  color: #31708f;
+}
+.ly .list_box a:hover{
+  color: red;
+}
+.ly .ly_list p:nth-child(1){
+  /* height: 40px; */
+  display: flex;
+  align-items: center;
+}
+.ly .ly_list p i{
+  width: 40px;
+  height: 40px;
+  /* border: 1px solid red; */
+  border-radius: 50%;
+  background-image: url(./../images/lf.jpg);
+  background-size: 100%;
+  margin-right: 5px;
+}
+.ly .ly_list p strong{
+  font-weight: bold;
+}
+.ly .ly_list p:last-child{
+  padding: 5px 0;
+  line-height: 16px;
+  margin-top: 5px;
+  /* border: 1px solid #000; */
+}

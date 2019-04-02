@@ -1,0 +1,83 @@
+/* 留言板 */
+.llb{
+  /* border: 1px solid red; */
+  padding: 20px;
+  background-color: #f5f5f5;
+  box-shadow: 1px 1px 5px rgba(97,97,97,.48);
+  border: 1px solid rgb(97, 97, 97);
+}
+.llb h4{
+  font-size: 16px;
+  padding: 12px 0;
+}
+.llb .llb_name,
+.llb .llb_hf{
+  display: flex;
+  width: 100%;
+  /* border: 1px solid red; */
+}
+/* .llb .reply_name,
+.llb .reply{
+  border: 1px solid #000;
+} */
+.llb > div{
+  margin-bottom: 20px;
+}
+.llb > div:last-child{
+  margin-bottom: 0;
+}
+.llb .text_bor{
+  padding: 8px 12px;
+  color: #555;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  margin-right: 20px;
+}
+.llb .text_bor:focus{
+  border-color: #66afe9;
+  outline: 0;
+}
+.llb .llb_name .emite input{
+  width: 300px;
+}
+.llb textarea{
+  width: 100%;
+  min-height: 80px;
+  box-sizing: border-box;
+  /* padding: 6px 12px; */
+}
+.llb .yzm{
+  display: flex;
+  cursor: pointer;
+  /* background-color: #fff; */
+}
+.llb .img{
+  width: 100px;
+  height: 30px;
+  background-color: #fff;
+  /* border: 1px solid #000; */
+}
+.llb .tj{
+  display: flex;
+  /* border: 1px solid red; */
+  align-items: center;
+}
+.llb .tj button{
+  background-color: #fff;
+  color: #555;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  padding: 5px 8px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+.llb .tj button:hover{
+  color: #333;
+  background-color: #d4d4d4;
+  border-color: #8c8c8c;
+}
+.llb .tj p{
+  color: red;
+  font-weight: bold;
+}

@@ -1,0 +1,80 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.content .box{
+  /* width: 100px; */
+  /* border: 1px solid red; */
+  height: 120px;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.514);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.746);
+  margin-bottom: 20px;
+}
+.content .box p:nth-child(2){
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 16px;
+}
+/* .content .box p:nth-child(3){
+  margin-top: 18px;
+  display: flex;
+  justify-content: space-between;
+} */
+
+.con ul{
+  display: flex;
+  flex-direction: column;
+}
+.con ul li{
+  margin-bottom: 30px;
+  border: 1px solid rgba(39, 38, 38, 0.342);
+  border-radius: 4px;
+  box-shadow: 4px 4px 5px rgba(0,0,0, .5);
+  
+}
+.con .con_warp{
+  padding: 15px;
+  overflow: hidden;
+  /* border: 1px solid red; */
+  height: 85px;
+  /* height: 100px; */
+}
+.con .con_warp h2{
+  margin-bottom: 15px;
+}
+.con .con_warp h2 a{
+  color: #000;
+  font-size: 20px;
+}
+.con .con_warp h2 a:hover{
+  color: #337ab7;
+}
+
+.con .con_warp div.coun{
+  line-height: 20px;
+  /* border: 1px solid red; */
+}
+.con ul .con_qt{
+  display: flex;
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.849);
+  color: #fff;
+  /* border: 1px solid red;/ */
+}
+.con ul .con_qt > p,
+.con ul .con_qt > span{
+  margin-right: 5px;
+}
+.con ul .con_qt a{
+  color: #fff;
+}
+.con  ul .con_qt a:hover{
+  color: #337ab7;
+}
+
